@@ -57,8 +57,8 @@ onMounted(()=>{
     window.addEventListener('touchmove', handleScroll)
 })
 
-import { debounce } from 'lodash'
-const handleScroll = debounce(()=>{
+// import { debounce } from 'lodash'
+const handleScroll = ()=>{
     const scrollHeight = document.documentElement.scrollHeight;
 const scrollTop =  document.documentElement.scrollTop;
 const clientHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -78,7 +78,7 @@ const clientHeight = window.innerHeight || document.documentElement.clientHeight
                }
          
     }
-}, 400)
+}
 
 const truncated = ref(true)
 
