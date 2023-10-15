@@ -127,14 +127,14 @@ onMounted(()=>{
     window.addEventListener('click', ()=> userStore.shown = false)
 })
 
-import { debounce } from 'lodash'
+// import { debounce } from 'lodash'
 setInterval(() => {
     
     handleScroll()
 }, 10000);
 
 const onPage = ref(2)
-const handleScroll = debounce(()=>{
+const handleScroll = ()=>{
     const scrollHeight = document.documentElement.scrollHeight;
     const scrollTop = document.documentElement.scrollTop;
     const clientHeight = document.documentElement.clientHeight;
@@ -153,7 +153,7 @@ const handleScroll = debounce(()=>{
         }
             
     }
-}, 400)
+}
 
    watch(()=>searchTerm.value, ()=>{
     userStore.isSearchLoading = true
