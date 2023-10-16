@@ -36,9 +36,9 @@
     </div>
 </div>
 <div class="flex flex-col gap-0">
-   <!-- <carousel/>
+   <carousel/>
    
-   <carousel-2 class="mt-[-2em]" /> -->
+   <carousel-2 class="mt-[-2em]" />
 </div>
 
 <!--main content-->
